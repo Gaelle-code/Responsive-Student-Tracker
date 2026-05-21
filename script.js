@@ -15,7 +15,7 @@ taskForm.addEventListener('submit', (e) => {
 
     // Validation
     if (taskName === '' || dueDate === '') {
-        alert('Please fill in all fields');
+       alert('Please fill in both task name and due date!');
         return;
     }
 
@@ -48,7 +48,7 @@ function displayTasks() {
             <p class="text-gray-600 mt-2">Due Date: ${task.date}</p>
             <button
                 onclick="deleteTask(${task.id})"
-                class="mt-4 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
+                class="mt-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded w-full"
             >
                 Delete
             </button>
