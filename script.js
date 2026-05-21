@@ -58,7 +58,7 @@ function displayTasks() {
     });
 }
 
-// Delete Task
+// Delete Task by ID
 function deleteTask(id) {
     tasks = tasks.filter(task => task.id !== id);
     saveTasks();
